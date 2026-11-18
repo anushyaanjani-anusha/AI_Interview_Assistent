@@ -5,6 +5,6 @@ st.title("AI Interview Assistent")
 st.caption("practice and prepare for your placement here")
 try: 
   client=Groq(api_key=st.secrets["GROQ_API_KEY"])
-  except(KeyError.FileNotFound):
-    st.error("API Key is missing.Add it in Advanced settings")
-    st.stop()
+except(KeyError.FileNotFound):
+  st.error("API Key is missing.Add it in Advanced settings")
+  st.stop()
