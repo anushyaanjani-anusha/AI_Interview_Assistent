@@ -8,6 +8,7 @@ st.set_page_config(
 
 st.title("AI Interview Assistant")
 st.caption("Practice and Prepare for your Placements here")
+st.markdown("made by Anusha A")
 
 # Connect to Groq API
 try:
